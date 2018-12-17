@@ -16,8 +16,14 @@ include("partials/header.php");
 		<label>Event</label>
 		<input type="text" placeholder="Business meeting">
 
-		<label>Guest</label>
+		<label>Number of Guests</label>
 		<input type="text" placeholder="100 people">
+
+		<label>Date</label>
+		<input type="text" placeholder="January 1, 2019">
+		
+		<label>Details</label>
+		<textarea>Explain the details of your expecting event.</textarea>
 
 		<input type="submit" placeholder="Send" class="btn btn-secondary submit">
 		</form>

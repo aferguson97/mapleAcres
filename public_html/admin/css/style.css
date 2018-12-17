@@ -1,0 +1,484 @@
+/*Fonts
+Headings: 'Merriweather Light Italic', sans-serif;
+Text: 'Roboto Light', sans-serif;
+
+Colors:
+#002335 navy blue
+#00a9dd icy blue
+#606060 rusty grey
+#00cfc1 turquoise
+#f2f2f2 light grey
+*/
+
+
+* {
+	margin:0;
+	padding:0;
+	font-family:'Roboto', sans-serif;
+	font-weight:300;
+	color:#606060 /*rusty grey*/;
+	text-decoration:none;
+	list-style: none;
+	transition:.3s ease;
+	box-sizing: border-box;
+}
+
+html {
+	position: relative;
+	min-height: 100%;
+	margin: 0 auto;
+}
+
+
+body {
+	position: relative;
+	padding-bottom: 6rem;
+	min-height: 100%;
+}
+
+.container {
+	width:900px;
+	max-width: 100%;
+	margin-left:250px;
+	position: relative;
+	margin-top:75px;
+}
+
+.cms-photo {
+	width:150px;
+	display:block;
+	max-width: 100%;
+	height:100px;
+}
+
+th {
+	color:#000;
+	font-size:14px;
+	text-align: left;
+	font-weight:normal;
+}
+
+#editForm  {
+	width:100%;
+	height:100%;
+	margin-top:5px;
+	margin-bottom:20px;
+}
+
+#editForm h1 {
+	text-align:left;
+	color:#000;
+	font-size:20px;
+	border-bottom:5px solid #002335 /*navy blue*/;
+	margin-bottom:20px;
+	display:inline-block;
+}
+
+#editForm textarea {
+	width:400px;
+	height:150px;
+	resize: none;
+}
+
+#pagesTable h1, #adminSettings h1, #usersTable h1, #addForm h1, #contactInfo h1 {
+	text-align:left;
+	color:#000;
+	font-size:20px;
+	border-bottom:5px solid #002335 /*navy blue*/;
+	margin-bottom:20px;
+	display: inline-block;
+}
+
+.updateBtn {
+	padding:5px 0;
+	color:#fff;
+	font-size:12px;
+	text-transform: uppercase;
+	font-weight: 600;
+	background:#000;
+	border:none;
+	cursor: pointer;
+	width:120px;
+}
+
+.updateBtn:hover, .editBtn:hover, .addBtn:hover, .loginBtn:hover, .deleteBtn:hover {
+	filter:brightness(70%);
+}
+
+
+/*-- Login --*/
+#loginContainer {
+	width:100%;
+	margin-top:50px;
+}
+
+#loginForm .logo {
+	margin:auto;
+	display: block;
+	margin-bottom:40px;
+}
+
+#loginForm{
+	width:350px;
+	max-width:100%;
+	margin:auto;
+	box-shadow: 0 2px 6px 0px rgba(0,0,0,0.4);
+	padding:40px;
+	margin-top:30px;
+}
+
+#loginForm input {
+	display:block;
+}
+
+#loginForm label {
+	display:block;
+	margin-bottom:5px;
+	font-size:14px;
+}
+
+#loginForm input[type="text"], #loginForm input[type="password"] {
+	min-width:100%;
+	border:1px solid #cdcdcd /*grey*/;
+	padding:10px 2px;
+	margin-bottom:30px;
+}
+
+#loginForm :placeholder {
+	font-size:12px;
+}
+
+#loginForm .loginBtn {
+	border:none;
+	background:#002335 /*navy blue*/;
+	color:#fff;
+	padding:10px 0px;
+	margin-top:30px;
+	display:block;
+	width:100%;
+	text-transform: uppercase;
+}
+
+.error {
+	color:#fc0030 /*strawberry red*/;
+	font-size:14px;
+	text-align:center;
+	padding: 10px 40px;
+	width:400px;
+	max-width:100%;
+	margin:auto;
+	margin-top:50px;
+	background:#ffcccc/*light strawberry pink*/;
+	border: 1px solid #fc0030 /*strawberry red*/;
+}
+
+#loginForm input[type='text'].errorJS, #loginForm input[type='password'].errorJS {
+	background:#fc0030 /*strawberry red*/;
+	border: 2px solid red;
+}
+
+/*-- End of Login --*/
+
+
+
+
+
+
+
+/*-- Side Nav --*/
+
+#sideNav {
+	height:100vh;
+	width:175px;
+	position: fixed;
+	top:0;
+	background:#002335 /*navy blue*/;
+	padding:0 30px;
+}
+
+#sideNav .logo-white {
+	width:100%;
+	margin:auto;
+	display:block;
+	margin-bottom:30px;
+	padding-top:30px;
+}
+
+#sideNav p {
+	text-align:center;
+	font-size:16px;
+	margin-bottom:50px;
+	text-transform:uppercase;
+	font-weight:bold;
+}
+
+
+.headerLinks a {
+	font-size:16px;
+	color:#fff;
+	display:inline-block;
+	transition: 0s;
+	cursor: pointer;
+	height:25px;
+	margin-bottom:10px;
+}
+
+.headerLinks a:hover {
+	border-bottom:3px solid #fff;
+}
+
+/*-- End of Side Nav --*/
+
+
+
+
+/*-- Dashboard --*/
+.welcome {
+	font-size:14px;
+}
+
+#manageContent {
+	margin:auto;
+	max-width:100%;
+	text-align:left;
+	position: relative;
+}
+
+#manageContent h1 {
+	text-align:left;
+	color:#002335 /*navy blue*/;
+	font-size:30px;
+	margin-bottom:30px;
+}
+
+#manageContent img {
+	width:20px;
+	display:inline-block;
+	position: relative;
+	top:2px;
+}
+
+#manageContent .content {
+	text-align:left;
+	margin-bottom:20px;
+}
+
+#manageContent .content:hover{
+	opacity:0.7;
+	margin-left:10px;
+}
+
+#manageContent .content p {
+	font-size:16px;
+	display:inline-block;
+	margin-left:10px;
+}
+/*-- End of Dashboard --*/
+
+
+
+
+
+/*-- Admin Settings --*/
+
+#adminSettings label{
+	display: block;
+	margin-bottom:5px;
+	font-size:14px;
+}
+
+#adminSettings input[type="text"], #adminSettings input[type="password"] {
+	display: block;
+	margin-bottom:20px;
+	width:175px;
+	padding:5px;
+}
+
+/*-- End of Admin Settings --*/
+
+
+
+/*-- Contact Info --*/
+
+#contactInfo label{
+	display: block;
+	margin-bottom:5px;
+	font-size:14px;
+}
+
+#contactInfo input[type="text"] {
+	display: block;
+	margin-bottom:20px;
+	width:220px;
+	padding:5px;
+}
+
+
+
+/*-- End of Contact Info --*/
+
+
+
+
+
+
+/*-- Pages --*/
+#pagesTable p {
+	font-size:14px;
+	color:#002335 /*navy blue*/;
+	display: inline-block;
+	margin-bottom: 20px;
+	font-weight:bold;
+	margin-left:30px;
+}
+
+#pagesTable p:hover {
+	color:#00cfc1 /*turquoise*/;
+}
+
+#pagesTable td{
+	padding:20px 0px;
+	width:20%;
+}
+
+#pagesTable .editBtn, #pagesTable .addBtn, .deleteBtn {
+	padding:5px 30px;
+	color:#fff;
+	font-size:12px;
+	text-transform: uppercase;
+	font-weight: 600;
+}
+
+#pagesTable .editBtn {
+	background: #000
+}
+
+#pagesTable .addBtn {
+	background:green;
+}
+
+.deleteBtn {
+	background: red;
+	margin-top:10px;
+	display: block;
+	width:100px;
+	text-align: center;
+	padding:5px 20px;
+}
+
+/*-- End of Pages --*/
+
+
+
+
+
+/*-- Edit Home --*/
+table#homeTable {
+	margin-bottom:50px;
+}
+
+table#homeTable td {
+	width:100%;
+}
+
+
+
+/*-- End of Edit Home --*/
+
+
+
+
+
+
+
+
+/*-- Edit Weddings --*/
+table#weddingsTable td {
+	width:33%;
+}
+table#weddingsTable textarea{
+	margin-bottom:50px;
+	width:300px;
+	margin-right:30px;
+}
+
+/*-- End of Edit Weddings --*/
+
+
+
+
+
+
+/*-- Edit Media --*/
+
+.photo-holder .photo {
+	width:25%;
+	float:left;
+	margin-bottom:40px;
+}
+
+.photo-holder{
+	width:100%;
+	height:200px;
+}
+
+
+
+/*-- End of Edit Media --*/
+
+
+/*-- Add Design Photo --*/
+#img-holder {
+	width:150px;
+	max-width: 100%;
+	height:100px;
+	background-size: cover;
+	background-position: center;
+	display: none;
+}
+
+#addForm .addBtn {
+	padding:5px 0;
+	color:#fff;
+	font-size:12px;
+	text-transform: uppercase;
+	font-weight: 600;
+	background:#00cfc1 /*turquoise*/;
+	border:none;
+	width:90px;
+	cursor: pointer;
+}
+
+#addForm textarea {
+	width:300px;
+	height:100px;
+	resize: none;
+	margin-bottom:40px;
+	display: block;
+	padding:5px;
+}
+
+#addForm label{
+	display: block;
+	font-size:14px;
+}
+
+#addForm input[type="text"] {
+	display: block;
+	width:200px;
+	margin-bottom:30px;
+	padding:5px;
+}
+
+#addForm select {
+	width:200px;
+	padding:5px;
+	margin-bottom:30px;
+}
+
+.upload{
+	display: block;
+	margin-bottom:30px;
+}
+
+/*-- End of Add Design Photo --*/

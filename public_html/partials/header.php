@@ -38,6 +38,12 @@ foreach($arrNav as $nav)
 		<li><a href="index.php?pagesID=4" class="<?=$mediaActive?>">Media</a></li>
 		<li><a href="index.php?pagesID=6" class="<?=$contactActive?>">Contact</a></li>
 		<a href="index.php?pagesID=5" class=" btn btn-primary reserve">Reserve</a>
+		<?php 
+		$arrPages = selectSQL("SELECT * FROM pages");
+		foreach($arrPages as $page) {
+		if($page['id'] > 6) { ?>
+		<li><a href="index.php?pagesID=<?=$page['id']?>"><?=$page["strName"]?></a></li>
+		<?php } }?>
 	</ul>
 
 	<div class="call">
