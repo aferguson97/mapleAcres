@@ -1,0 +1,856 @@
+/*Fonts
+Headings: 'Merriweather Light Italic', sans-serif;
+Text: 'Roboto Light', sans-serif;
+
+Colors:
+#002335 navy blue
+#00a9dd icy blue
+#606060 rusty grey
+#00cfc1 turquoise
+#f2f2f2 light grey
+*/
+
+* {
+	margin:0;
+	padding:0;
+	font-family:'Roboto', sans-serif;
+	font-weight:300;
+	color:#606060 /*rusty grey*/;
+	text-decoration:none;
+	list-style: none;
+	transition:.3s ease;
+	box-sizing: border-box;
+}
+
+html {
+	position: relative;
+	min-height: 100%;
+	margin: 0 auto;
+}
+
+body {
+	padding-bottom: 174px;
+}
+
+.active {
+	color:#002335 /*navy blue*/;
+	font-weight:bold;
+}
+
+.btn {
+	color:#fff;
+	letter-spacing: 3px;
+	font-size:14px;
+	border-radius: 6.5px;
+	padding:20px;
+	display:inline-block;
+	text-transform: uppercase;
+}
+
+.btn:hover {
+	background:#002335 /*navy blue*/;
+}
+
+.btn-primary {
+	background:#00d895 /*mint green*/;
+}
+
+.btn-secondary {
+	background:#00a9dd /*icy blue*/;
+}
+
+#social-links {
+	padding-top:35px;
+	cursor: pointer;
+}
+
+#social-links img{
+	width:30px;
+}
+
+.social-ig, .social-yt {
+	margin-left:10px;
+}
+
+.social-fb:hover, .social-ig:hover, .social-yt:hover {
+	opacity:0.7;
+}
+
+
+/*-- Header --*/
+header {
+	width:100%;
+	top:0;
+	text-align: center;
+	height:100px;
+	background:#fff;
+	box-shadow:0px 0px 5px 1px #002335 /*navy blue*/;
+	position:fixed;
+	z-index:1;
+}
+
+header > *{
+	float: left;
+    height: 100%;
+    position: relative;
+    width:33.33%;
+}
+
+#iconNav {
+	cursor: pointer;
+}
+
+#iconNav img {
+	width:30px;
+	padding-top:40px;
+}
+
+#iconNav:hover{
+	opacity:0.7;
+}
+
+.logo {
+	width:110px;
+	padding-top:10px;
+}
+
+@media only screen and (max-width:600px){
+	header {
+		height:60px;
+	}
+
+	#iconNav img {
+		width:20px;
+		padding-top:25px;
+	}
+	.logo{
+		width:75px;
+		padding-top:3px;
+	}	
+
+	#social-links {
+		padding-top:20px;
+	}
+	#social-links img{
+		width:20px;
+	}		
+}
+
+/*-- End of Header --*/
+
+
+/*-- Mobile Nav --*/
+#mobileNav {
+	display: block; 
+	position: fixed;
+	left:-100vw;
+	width: 300px;
+	max-width: 100%;
+	height: 450px; 
+	background: #fff; 
+	text-align: center; 
+	z-index:1;
+	box-shadow:0px 0px 5px 1px #606060 /*rusty grey*/;
+}
+
+#mobileNav .iconClose {
+	width:15px;
+}
+
+#closeMenu {
+	box-shadow:0px 0px 3px 1px #606060 /*rusty grey*/;
+	padding:20px 0;
+	margin-bottom:20px;
+	cursor: pointer;
+}
+
+#closeMenu:hover {
+	opacity:0.7;
+}
+
+#closeMenu p{
+	display:inline-block;
+	font-size:16px;
+}
+
+#mobileNav li{
+	padding:10px;
+}
+
+#mobileNav li a {
+	transition:0s;
+}
+
+#mobileNav li a:hover {
+	border-bottom:3px solid #002335 /*navy blue*/;
+}
+
+.call {
+	margin-top:30px;
+}
+
+#mobileNav .reserve {
+	margin-top:30px;
+	padding:10px;
+}
+
+.iconPhone img{
+	width: 20px; 
+}
+
+.call p {
+	color:#002335 /*navy blue*/;
+	font-size:16px;
+	font-weight:bold;
+	display: inline-block;
+}
+
+/*-- End of Mobile Nav --*/
+
+
+
+/*-- Footer --*/
+
+footer {
+	width:100%;
+	position: absolute;
+	bottom:0;
+	padding-bottom: 40px;
+	box-shadow:0px 0px 3px 0px #002335 /*navy blue*/;;
+}
+
+footer .iconMaple {
+	width:75px;
+	margin:auto;
+	display:block;
+	padding-top:40px;
+	margin-bottom:20px;
+}
+
+footer p {
+	font-size:14px;
+	margin-bottom:5px;
+	text-align:center;
+	color:#002335 /*navy blue*/;
+	font-weight:bold;
+}
+
+
+
+@media only screen and (max-width:600px) {
+	footer .iconMaple {
+		width:50px;
+	}
+	footer p {
+		width:70%;
+		margin:auto;
+		font-size:12px;
+	}
+}
+
+/*-- End of Footer --*/
+
+
+
+/*-- Home --*/
+#homeBanner {
+	background:url("../assets/homeHero.jpeg");
+	position:relative;
+	background-repeat: no-repeat;
+	width:100%;
+	height:600px;
+	background-size: cover;
+}
+
+.headerText {
+	position:absolute;
+	width:550px;
+	height:160px;
+	max-width:100%;
+	max-height:100%;
+	top:300px;
+	bottom:0;
+	right:100px;
+	margin:auto;
+}
+
+.headerText h1 {
+	font-family:'Merriweather', sans-serif;
+	color:#002335 /*navy blue*/;
+	font-size:50px;
+	text-align:left;
+	margin-bottom:20px;
+}
+
+.headerText a.events {
+	margin-right:20px;
+}
+
+#homeIntro {
+	background:url("../assets/homeIntro.jpg");
+	position:relative;
+	background-repeat: no-repeat;
+	width:100%;
+	height:500px;
+	background-size: cover;
+}
+
+#homeIntro:before {
+	content: '';
+    display: block;
+    position: absolute;
+    background-color: #00a9dd /*icy blue*/;
+    opacity:0.7;
+    width: 100%;
+   	height:500px;
+}
+
+.homeIntroContent{
+	position:absolute;
+	width:400px;
+	height:200px;
+	max-width:100%;
+	max-height:100%;
+	top:0;
+	bottom:0;
+	left:0;
+	right:0;
+	margin:auto;
+	text-align: center;
+}
+
+.lake {
+	width:700px;
+	max-width: 100%;
+	display: block;
+	margin: auto;
+	top:0;
+	bottom:0;
+	left:0;
+	right:0;
+	position: absolute;
+}
+
+.homeIntroContent img {
+	width:30px;
+	display:block;
+	margin:auto;
+}
+
+.homeIntroContent p{
+	color:#fff;
+	line-height: 1.5em;
+	font-size:16px;
+	margin-top:40px;
+}
+
+#services {
+	width:100%;
+}
+
+.service {
+	float: left;
+    height: 100%;
+    position: relative;
+    width:50%;
+    height:450px;
+    display: block;
+	margin: auto;
+	top:0;
+	bottom:0;
+	left:0;
+	right:0;
+	overflow: hidden;
+}
+
+.service img{
+	width:100%;
+	min-height:100%;
+}
+
+
+.banquetsFrame{
+  height:100%;
+  width:100%;
+  background-position:center;
+  background-size:cover;
+  background-image: url('../assets/homeBanquets.png');
+  background-repeat: no-repeat;
+}
+
+.weddingsFrame{
+  height:100%;
+  width:100%;
+  background-position:center;
+  background-size:cover;
+  background-image: url('../assets/homeWeddings.png');
+  background-repeat: no-repeat;
+}
+
+.serviceName {
+	margin: auto 0;
+	top:0;
+	bottom:0;
+	left:0;
+	right:0;
+	position: absolute;
+	height:40px;
+}
+
+.banquetsFrame:hover, .weddingsFrame:hover{
+	transform: scale(1.1);
+	filter: brightness(70%);
+}
+
+.serviceName p{
+	color:#fff;
+	text-transform: uppercase;
+	letter-spacing: 3px;
+	font-size:20px;
+	text-align:center;
+	height:30px;
+}
+
+.service .underline {
+	border-bottom: 5px solid #00cfc1 /*turquoise*/;
+	width:30px;
+	margin:auto;
+}
+
+#accolades{
+	width:100%;
+	text-align: center;
+	margin-bottom:75px;
+}
+
+#accolades img {
+	width:150px;
+	margin:auto;
+	margin-left:60px;
+}
+
+#accolades img:nth-of-type(1){
+	margin-left: 0;
+}
+
+#accolades img:nth-of-type(2){
+	position: relative;
+	top:40px;
+}
+
+@media only screen and (max-width:900px){
+	.headerText {
+		top:0;
+		left:0;
+		bottom:0;
+		right:0;
+		width:80%;
+	}
+
+	.lake {
+		width:90%;
+	}
+
+	.service{
+		height:200px;
+	}
+}
+
+@media only screen and (max-width:700px){
+	#homeBanner:before {
+		content: '';
+	    display: block;
+	    position: absolute;
+	    background-color: #fff;
+	    opacity:0.5;
+	    width: 100%;
+	   	height:350px;
+	}
+
+	.headerText {
+		height:0;
+	}
+
+	#homeBanner {
+		height:350px;
+	}
+
+	#homeIntro, #homeIntro:before {
+		height:400px;
+	}
+
+	.headerText h1 {
+		font-size:20px;
+	}
+
+	.headerText a{
+		font-size:10px;
+		padding:10px;
+	}
+
+	.homeIntroContent img {
+		width:25px;
+		margin-bottom:30px;
+	}
+
+	.homeIntroContent p{
+		font-size:14px;
+		width:70%;
+		margin:auto;
+		text-align: left;
+	}
+
+	.serviceName p{
+		font-size:14px;
+	}
+
+	#accolades{
+		margin-bottom:20px;
+	}
+
+	#accolades img:nth-of-type(2){
+		top:25px;
+	}
+
+	#accolades img {
+		width:75px;
+		margin-left:20px;
+	}
+}
+/*-- End of Home --*/
+
+
+/*-- Media --*/
+
+.mediaVideo iframe{
+	width:100%;
+	height:500px;
+	margin-top:100px;
+}
+
+#gallery {
+	width:1000px;
+	max-width: 100%;
+	margin:auto;
+	text-align: center;
+	height:450px;
+}
+
+.mediaPhoto {
+	float:left;
+	width:33%;
+	margin-bottom:40px;
+}
+
+#gallery h1 {
+	font-family:'Merriweather', sans-serif;
+	color:#002335 /*navy blue*/;
+	font-size:50px;
+	text-align:center;
+	margin-top:50px;
+}
+
+#gallery .underline {
+	border-bottom: 5px solid #00cfc1 /*turquoise*/;
+	width:30px;
+	margin:auto;
+	margin-bottom:20px;
+}
+
+#gallery p{
+	font-size:18px;
+	text-align:center;
+	margin-bottom:50px;
+}
+#gallery img {
+	width:260px;
+	max-width: 100%;
+	height:200px;
+	margin-left:30px;
+	cursor: pointer;
+}
+
+#gallery img:nth-of-type(1){
+	margin-left:0;
+}
+
+#gallery img:hover {
+	filter: brightness(70%);
+}
+
+@media only screen and (max-width:900px){
+	#gallery {
+		width:70%;
+		height:100%;
+		margin-bottom:0px;
+	}
+
+	#gallery h1{
+		font-size:40px;
+	}
+
+	#gallery p{
+		font-size:14px;
+	}
+
+	.mediaPhoto {
+		width:100%;
+		float:none;
+		margin:auto;
+	}
+
+	#gallery img {
+		width:500px;
+		height:100%;
+		margin-left: 0;
+		margin-bottom:40px;
+	}
+}
+
+@media only screen and (max-width:700px){
+	.mediaVideo iframe {
+		height:300px;
+		margin-top:50px;
+	}
+}
+/*-- End of Media --*/
+
+
+
+/*-- Weddings --*/
+
+#weddingsBanner {
+	width:100%
+	max-width:100%;
+	height:100%;
+	margin:0 auto;
+	margin-top:100px;
+	position: relative;
+}
+
+.weddingsHero {
+	background: url("../assets/weddingsHero.jpg");
+	background-size: cover;
+	background-position: center;
+	width:100%;
+	height:400px;
+}
+
+.weddingsIntroText {
+	padding:50px;
+	background:#00cfc1 /*turquoise*/;
+	width:500px;
+	max-width:100%;
+	height:400px;
+	position:absolute;
+	top:0;
+	right:0;
+}
+
+.weddingsIntroText h1{
+	font-family:'Merriweather', sans-serif;
+	color:#fff;
+	font-size:50px;
+	text-align:left;
+	padding-top:20px;
+	margin-bottom:20px;
+}
+
+.weddingsIntroText p {
+	color:#fff;
+	font-size:18px;
+	text-align:left;
+	line-height: 1.5em;
+}
+
+#weddingsService {
+	width:600px;
+	max-width:100%;
+	height:300px;
+	margin:0 auto;
+	margin-top:50px;
+	margin-bottom:50px;
+	position: relative;
+}
+
+.weddingsImg {
+	width:50%;
+	max-width:100%;
+	max-height:100%;
+	float:right;
+	padding-top:60px;
+}
+
+.weddingsServiceText {
+	width:40%;
+	max-width:100%;
+	height:100%;
+	position:absolute;
+	margin:auto 0;
+	top:0;
+}
+
+.weddingsServiceText h1{
+	font-family:'Merriweather', sans-serif;
+	color:#002335 /*navy blue*/;
+	font-size:40px;
+	font-weight:bold;
+	text-align:left;
+	margin-bottom:10px;
+}
+
+.weddingsServiceText p {
+	font-size:16px;
+	text-align:left;
+	line-height: 1.5em;
+}
+
+.bookBtn{
+	text-align: center;
+	margin-bottom:50px;
+}
+
+@media only screen and (max-width:800px){
+	#weddingsService {
+		width:70%;
+	}
+}
+
+@media only screen and (max-width:600px){
+	#weddingsBanner {
+		margin-top:50px;
+	}
+
+	.weddingsIntroText p{
+		font-size:14px;
+	}
+
+	.weddingsImg{
+		display:none;
+	}
+
+	#weddingsService {
+		height:200px;
+	}
+
+	.weddingsServiceText {
+		width:100%;
+	}
+
+	.weddingsServiceText h1{
+		font-size:20px;
+	}
+	.weddingsBookBtn {
+		margin-top:-50px;
+	}
+}
+/*--End of Weddings --*/
+
+
+/*-- Banquets --*/
+.banquetsHero {
+	background: url("../assets/banquetsHero.jpg");
+	background-size: cover;
+	background-position: center;
+	width:100%;
+	height:400px;
+}
+
+.menu p{
+	margin-bottom:10px;
+}
+
+/*-- End of Banquets --*/
+
+
+/*-- Reservations --*/
+
+.reserveHero {
+	background: url("../assets/reserveHero.png");
+	background-size: cover;
+	background-position: center;
+	width:100%;
+	height:600px;
+}
+
+
+.contactForm {
+	padding:50px;
+	background:#fff;
+	width:500px;
+	max-width:100%;
+	height:100%;
+	position:absolute;
+	top:0;
+	right:0;
+}
+
+.contactForm label{
+	font-size:14px;
+	display: block;
+	font-weight: bold;
+	color:#002335 /*navy blue*/;
+	margin-bottom:10px;
+}
+
+.contactForm label:before{
+	content:'*';
+	color:red;
+}
+
+.contactForm input[type="text"]{
+	width:400px;
+	max-width:100%;
+	padding:10px;
+	margin-bottom:20px;
+}
+
+.contactForm h1{
+	font-family:'Merriweather', sans-serif;
+	color:#002335 /*navy blue*/;
+	font-size:50px;
+	text-align:left;
+	padding-top:20px;
+	margin-bottom:20px;
+}
+
+.contactForm p {
+	color:#fff;
+	font-size:18px;
+	text-align:left;
+	line-height: 1.5em;
+}
+
+.contactForm .submit{
+	border:none;
+}
+
+/*-- End of Reservations --*/
+
+
+
+/*-- Contact --*/
+.contactHero {
+	background: url("../assets/contactHero.jpg");
+	background-size: cover;
+	background-position: bottom;
+	width:100%;
+	height:600px;
+}
+
+.contactForm textarea {
+	padding:10px;
+	height:100px;
+	width:400px;
+	max-width: 100%;
+	margin-bottom:30px;
+	resize: none;
+}
+
+@media only screen and (max-width:600px){
+	.contactForm h1{
+		font-size:30px;
+	}
+}
+
+/*-- End of Contact --*/
